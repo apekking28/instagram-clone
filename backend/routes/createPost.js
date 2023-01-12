@@ -22,7 +22,7 @@ router.post("/createPost", requireLogin, (req, res) => {
     if (!body || !pic) {
         return res.status(422).json({ error: "Please add all the fields" })
     }
-    console.log(req.user)
+    // console.log(req.user)
     const post = new POST({
         body,
         photo: pic,
