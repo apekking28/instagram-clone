@@ -18,7 +18,7 @@ export default function ProfilePic({ changeprofile }) {
       .then((res) => res.json())
       .then((data) => setUrl(data.url))
       .catch((err) => console.log(err));
-    console.log(url);
+    // console.log(url);
   };
 
   const postPic = () => {
@@ -35,7 +35,7 @@ export default function ProfilePic({ changeprofile }) {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         changeprofile();
         window.location.reload();
       })

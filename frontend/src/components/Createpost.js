@@ -42,7 +42,7 @@ export default function Createpost() {
 
   // posting image to cloudinary
   const postDetails = () => {
-    console.log(body, image);
+    // console.log(body, image);
     const data = new FormData();
     data.append("file", image);
     data.append("upload_preset", "insta-clone");
@@ -54,7 +54,7 @@ export default function Createpost() {
       .then((res) => res.json())
       .then((data) => setUrl(data.url))
       .catch((err) => console.log(err));
-    console.log(url);
+    // console.log(url);
   };
 
   const loadfile = (event) => {

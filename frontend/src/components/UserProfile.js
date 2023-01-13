@@ -24,7 +24,7 @@ export default function UserProfie() {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         setIsFollow(true);
       });
   };
@@ -45,7 +45,7 @@ export default function UserProfie() {
         res.json();
       })
       .then((data) => {
-        console.log(data);
+        // console.log(data);
         setIsFollow(false);
       });
   };
@@ -58,7 +58,7 @@ export default function UserProfie() {
     })
       .then((res) => res.json())
       .then((result) => {
-        console.log(result);
+        // console.log(result);
         setUser(result.user);
         setPosts(result.post);
         if (

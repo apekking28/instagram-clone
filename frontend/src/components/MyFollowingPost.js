@@ -66,7 +66,7 @@ export default function MyFolliwngPost() {
           }
         });
         setData(newData);
-        console.log(result);
+        // console.log(result);
       });
   };
   const unlikePost = (id) => {
@@ -119,7 +119,7 @@ export default function MyFolliwngPost() {
         setData(newData);
         setComment("");
         notifyB("Comment posted");
-        console.log(result);
+        // console.log(result);
       });
   };
 
@@ -133,7 +133,7 @@ export default function MyFolliwngPost() {
             <div className="card-header">
               <div className="card-pic">
                 <img
-                  src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGVyc29ufGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                  src="http://res.cloudinary.com/apekking/image/upload/v1673426454/vf35pxlxbwrvebijjvqz.jpg"
                   alt=""
                 />
               </div>

@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
 
 export default function Home() {
-  var picLink = "https://cdn-icons-png.flaticon.com/128/3177/3177440.png"
+  var picLink = "https://cdn-icons-png.flaticon.com/128/3177/3177440.png";
   const navigate = useNavigate();
   const [data, setData] = useState([]);
   const [comment, setComment] = useState("");
@@ -30,7 +30,7 @@ export default function Home() {
     })
       .then((res) => res.json())
       .then((result) => {
-        console.log(result);
+        // console.log(result);
         setData(result);
       })
       .catch((err) => console.log(err));
@@ -60,14 +60,14 @@ export default function Home() {
       .then((res) => res.json())
       .then((result) => {
         const newData = data.map((posts) => {
-          if (posts._id == result._id) {
+          if (posts._id === result._id) {
             return result;
           } else {
             return posts;
           }
         });
         setData(newData);
-        console.log(result);
+        // console.log(result);
       });
   };
   const unlikePost = (id) => {
@@ -84,14 +84,14 @@ export default function Home() {
       .then((res) => res.json())
       .then((result) => {
         const newData = data.map((posts) => {
-          if (posts._id == result._id) {
+          if (posts._id === result._id) {
             return result;
           } else {
             return posts;
           }
         });
         setData(newData);
-        console.log(result);
+        // console.log(result);
       });
   };
 
@@ -111,7 +111,7 @@ export default function Home() {
       .then((res) => res.json())
       .then((result) => {
         const newData = data.map((posts) => {
-          if (posts._id == result._id) {
+          if (posts._id === result._id) {
             return result;
           } else {
             return posts;
@@ -120,7 +120,7 @@ export default function Home() {
         setData(newData);
         setComment("");
         notifyB("Comment posted");
-        console.log(result);
+        // console.log(result);
       });
   };
 
